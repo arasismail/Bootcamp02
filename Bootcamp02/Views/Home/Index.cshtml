@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @*@{
+            void KimO(string isim)
+            {
+                if (isim == "hazel")
+                {
+                    <h1 class="display-4">Hoşgeldin</h1>
+                }
+                else
+                {
+                    <h1 class="display-4">Seni Beklemiyordum</h1>
+                }
+            }
+
+            KimO("hazel");
+            KimO("burak");
+        }*@
+
+    @*@if (ViewData["Title"] == "Home Page")
+        {
+            <p>View Data equal "Home Page"</p>
+        }*@
+
+    @*@{
+            for (int i = 1; i < 50; i++)
+            {
+                int bolenSayisi = 0;
+                for (int j = 1; j <= i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        bolenSayisi++;
+                    }
+                }
+                if (bolenSayisi == 2)
+                {
+                    <p>@i sayısı asal sayıdır. </p>
+                }
+            }
+        }*@
+
+    @for (int i = 1; i < 50; i++)
+    {
+        if (i % 6 == 0)
+        {
+            <p>@i 6'nın katıdır.</p>
+        }
+    }
+
+</div>

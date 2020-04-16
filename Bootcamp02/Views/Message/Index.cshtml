@@ -1,0 +1,9 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Message Index</h1>
+<p>Message : @Model</p>
+
+@Html.Partial("MessagePartialView", @Model);
